@@ -22,3 +22,4 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 - Ajout du fichier de déploiement
 - Ajout de l'URL dans `hugo.toml`
 - Ajout d'un favicon
+- Gestion de l'orde dans le HERO lors du passage à un écran de téléphone

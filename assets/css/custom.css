@@ -43,8 +43,13 @@ body {
         align-items: center;
     }
 
-    .author {
-        margin-bottom: 30px;
+    .author-photo {
+        order: 1;
+        width: 100%;
+    }
+
+    .author-desc {
+        order: 2;
     }
 
     .social-links {
