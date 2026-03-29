@@ -1,0 +1,5 @@
+# Ne pas versionner le site généré
+public/
+resources/
+# Ne pas versionner le cache de développement
+.hugo_build.lock

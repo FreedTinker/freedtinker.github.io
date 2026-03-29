@@ -1,0 +1,54 @@
+@font-face {
+    font-family: font;
+    src: url('/fonts/DMSans.ttf');
+}
+
+:root {
+  --color-primary: 0 229 255; /* RGB values of #00e5ff */
+}
+
+html {
+    font-family: font;
+    font-size: 18px;
+}
+
+body {
+    max-width: 1500px;
+}
+
+.author-photo {
+    width: 35%;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+.gap-15 {
+    gap: calc(var(--spacing) * 15);
+}
+
+.self-flex-start {
+    align-self: flex-start;
+}
+
+.logo svg {
+  height: var(--text-base);  /* increase this until it matches the nav text height */
+  width: auto;
+}
+
+@media (max-width: 760px) {
+    header.flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author {
+        margin-bottom: 30px;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+    }
+}
