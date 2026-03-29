@@ -21,3 +21,4 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 ## [ 2026-03-27 ]
 - Ajout du fichier de déploiement
 - Ajout de l'URL dans `hugo.toml`
+- Ajout d'un favicon
