@@ -17,3 +17,7 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 - Affichage en mode Card des list pages et tag pages (term).
 - Activation de Zen mode dans les articles
 - Création du logo + désactivation du texte dans le header
+
+## [ 2026-03-27 ]
+- Ajout du fichier de déploiement
+- Ajout de l'URL dans `hugo.toml`
