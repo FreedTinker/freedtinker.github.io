@@ -23,3 +23,9 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 - Ajout de l'URL dans `hugo.toml`
 - Ajout d'un favicon
 - Gestion de l'orde dans le HERO lors du passage à un écran de téléphone
+
+## [ 2026-03-31 ]
+- Changement du thème de Github à Blowfish
+- Rédaction de la description (fr + en)
+- Correction du format de la date
+- Gestion du multilinguisme

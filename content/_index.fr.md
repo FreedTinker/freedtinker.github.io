@@ -4,4 +4,4 @@ draft = true
 title = ''
 +++
 
-Salut, je suis un étudiant en ingénierie spécialisé en **IA2R**. Je conçois des machines autonomes, j'enseigne les systèmes embarqués sur YouTube et je documente le chaos créatif de la fabrication matérielle.
+Bien le bonjour, et bienvenue ! Je suis Freed, étudiant en ingénierie robotique. À travers **Freed Tinker**, je souhaite documenter mon exploration de l'univers de la robotique, des systèmes embarqués, et au-delà. Ma démarche ? Une approche 'Tinker', fondée sur l'expérimentation et la compréhension profonde, afin de résoudre des problèmes ou prendre plaisir à créer.
