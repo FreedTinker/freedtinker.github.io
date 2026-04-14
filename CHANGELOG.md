@@ -29,3 +29,8 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 - Rédaction de la description (fr + en)
 - Correction du format de la date
 - Gestion du multilinguisme
+
+## [ 2026-04-14 ]
+- Modification de la description
+- Ajout du lien Youtube
+- Modification du header : centrage des nax textuels + icones light/dark mode

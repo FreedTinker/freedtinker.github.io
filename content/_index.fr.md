@@ -4,4 +4,5 @@ draft = false
 title = ''
 +++
 
-Bien le bonjour, et bienvenue ! Je suis Freed, étudiant en ingénierie robotique. À travers **Freed Tinker**, je souhaite documenter mon exploration de l'univers de la robotique, des systèmes embarqués, et au-delà. Ma démarche ? Une approche 'Tinker', fondée sur l'expérimentation et la compréhension profonde, afin de résoudre des problèmes ou prendre plaisir à créer.
+Bien le bonjour, et bienvenue à vous! Ici, nous réalisons divers projets autour de la **robotique** et des **systèmes embarqués** (ou au-delà), avec une approche fondée sur l'expérimentation et la compréhension profonde. L'objectif est d'apprendre ensemble ou juste prendre du plaisir à créer.
+Au programme : systèmes robotiques inspirés de la pop culture, objets résolvant des problèmes du quotidien, et tout autre projet plaisant.

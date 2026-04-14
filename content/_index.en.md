@@ -4,4 +4,5 @@ draft = false
 title = ''
 +++
 
-Hello there, and welcome! I’m Freed, a robotics engineering student. Through **Freed Tinker**, I aim to document my journey into the worlds of robotics, embedded systems, and beyond. My method? A ‘Tinker’ approach, rooted in experimentation and deep understanding, whether to solve complex problems or simply for the joy of creating.
+Hello, and welcome! Here, we work on various projects related to **robotics** and **embedded systems** (and beyond), taking an approach based on experimentation and deep understanding. The goal is to learn together or simply enjoy the process of creating.
+On the agenda: robotics systems inspired by pop culture, objects that solve everyday problems, and any other fun projects.

@@ -18,13 +18,20 @@
 [[main]]
   name = "Projets"
   pageRef = "projects"
-  weight = 20
+  weight = 15
 
 [[main]]
+  identifier = "github"
   pre = "github"
-  name = ""
   url = "https://github.com/FreedTinker"
-  weight = 30
+  weight = 200
+
+[[main]]
+  identifier = "youtube"
+  pre = "youtube"
+  url = "https://youtube.com/@freedtinker"
+  weight = 400
+
 
 #[[main]]
 #  name = "Blog"
