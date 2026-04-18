@@ -1,28 +1,9 @@
 {{/* Used by
-  1. list.html and term.html (when the cardView option is not enabled)
-  2. Recent articles template (when the cardView option is not enabled)
+  1. list.html and term.html (when the cardView option is enabled)
+  2. Recent articles template (when the cardView option is enabled)
   3. Shortcode list.html
 */}}
-{{ $constrainItemsWidth := site.Params.list.constrainItemsWidth | default false }}
 {{ $disableImageOptimization := site.Store.Get "disableImageOptimization" }}
-
-{{ $cardClasses := "flex flex-col md:flex-row relative" }}
-{{ $imgWrapperClasses := "" }}
-{{ $cardContentClasses := "" }}
-
-{{ if .Params.showCards | default site.Params.list.showCards }}
-  {{ $cardClasses = printf "%s overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600" $cardClasses }}
-  {{ $imgWrapperClasses = "" }}
-  {{ $cardContentClasses = printf "%s p-4" $cardContentClasses }}
-{{ else }}
-  {{ $cardClasses = $cardClasses }}
-  {{ $imgWrapperClasses = printf "%s " $imgWrapperClasses }}
-  {{ $cardContentClasses = printf "%s p-4" $cardContentClasses }}
-{{ end }}
-
-{{ if $constrainItemsWidth }}
-  {{ $cardClasses = printf "%s max-w-prose" $cardClasses }}
-{{ end }}
 
 {{ $page := .Page }}
 {{ $featured := "" }}
@@ -73,9 +54,10 @@
 {{ end }}
 
 
-<article class="article-link--simple {{ $cardClasses }} rounded-lg border border-neutral-300 dark:border-neutral-600">
+<article
+  class="article-link--card relative min-h-full min-w-full overflow-hidden rounded-lg border border-neutral-300 dark:border-neutral-600">
   {{ with $featuredURL }}
-    <div class="flex-none relative overflow-hidden {{ $imgWrapperClasses }} thumbnail">
+    <div class="flex-none relative overflow-hidden thumbnail_card">
       <img
         src="{{ . }}"
         role="presentation"
@@ -84,8 +66,18 @@
         class="not-prose absolute inset-0 w-full h-full object-cover">
     </div>
   {{ end }}
-  <div class="{{ $cardContentClasses }} ">
-    <header class="items-center text-start text-xl font-semibold">
+  <div class="flex flex-row gap-2 absolute top-0 right-0 m-2">
+
+    {{ if and .Draft .Site.Params.article.showDraftLabel }}
+      <span>{{ partial "badge.html" (i18n "article.draft" | emojify) }}</span>
+    {{ end }}
+    
+    <span>{{ partial "completion.html" . }}</span>
+
+  </div>
+
+  <div class="p-4">
+    <header>
       <a
         {{ with $page.Params.externalUrl }}
           href="{{ . }}" target="_blank" rel="external"
@@ -103,18 +95,12 @@
           {{ end }}
         </h2>
       </a>
-      {{ if and .Draft .Site.Params.article.showDraftLabel }}
-        <div class="ms-2">{{ partial "badge.html" (i18n "article.draft" | emojify) }}</div>
-      {{ end }}
-      {{ if templates.Exists "partials/extend-article-link.html" }}
-        {{ partial "extend-article-link.html" . }}
-      {{ end }}
     </header>
     <div class="text-sm text-neutral-500 dark:text-neutral-400">
       {{ partial "article-meta/basic.html" . }}
     </div>
-    {{ if .Params.showSummary | default (site.Params.list.showSummary | default false) }}
-      <div class="article-link__summary prose dark:prose-invert max-w-fit mt-1 line-clamp-3">
+    {{ if .Params.showSummary | default (.Site.Params.list.showSummary | default false) }}
+      <div class="article-link__summary prose dark:prose-invert mt-1 line-clamp-5">
         {{ .Summary | plainify }}
       </div>
     {{ end }}

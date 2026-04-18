@@ -1,7 +1,8 @@
 +++
 date = '2026-03-28T15:22:52+01:00'
-draft = false
+draft = true
 title = 'Test Project 2'
+completed = false
 
 # Paramètres Blowfish & Personnalisation Freed Tinker
 description =  ""

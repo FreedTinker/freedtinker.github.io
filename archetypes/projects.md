@@ -1,12 +1,12 @@
 +++
 date = '{{ .Date }}'
-draft = true
 title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+draft = true
+completed = false
 
 # Paramètres Blowfish & Personnalisation Freed Tinker
 description = ""
 tags =  [""]
-categories =  [""]
 
 # Intégration Vidéo (L'ID se trouve après 'v=' dans l'URL YouTube)
 youtube_id =  ""

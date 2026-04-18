@@ -34,3 +34,7 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 - Modification de la description
 - Ajout du lien Youtube
 - Modification du header : centrage des nax textuels + icones light/dark mode
+
+## [ 2026-04-18 ]
+- Ajout du statut de complétion
+- Désactivation du rendu des brouillons
