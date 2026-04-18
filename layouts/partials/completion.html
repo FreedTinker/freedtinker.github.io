@@ -1,21 +1,11 @@
 <span class="flex cursor-pointer">
-  <span
-    class="rounded-md border border-primary-400 px-1 py-[1px] text-xs font-normal text-primary-700 dark:border-primary-600 dark:text-primary-400">
+  <span class="border rounded-md px-1 py-[1px] text-xs badge {{ if .Params.completed }}badge-completed{{ else }}badge-not-completed{{ end }}">
     {{ if .Params.completed }}
-      {{ if eq .Site.Params.DisplayName "English" }}
-        Completed
-      {{ end }}
-      {{ if eq .Site.Params.DisplayName "Français" }}
-        Terminé
-      {{ end }}
-
+      {{ if eq .Site.Params.DisplayName "English" }}Completed{{ end }}
+      {{ if eq .Site.Params.DisplayName "Français" }}Terminé{{ end }}
     {{ else }}
-      {{ if eq .Site.Params.DisplayName "English" }}
-        Not completed
-      {{ end }}
-      {{ if eq .Site.Params.DisplayName "Français" }}
-        Non terminé
-      {{ end }}
-  {{ end }}
+      {{ if eq .Site.Params.DisplayName "English" }}Not completed{{ end }}
+      {{ if eq .Site.Params.DisplayName "Français" }}Non terminé{{ end }}
+    {{ end }}
   </span>
 </span>

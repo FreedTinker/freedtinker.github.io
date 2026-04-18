@@ -4,7 +4,7 @@
 }
 
 :root {
-  --color-primary: 0 229 255; /* RGB values of #00e5ff */
+    --color-primary: 0 229 255; /* RGB values of #00e5ff */
 }
 
 html {
@@ -33,9 +33,30 @@ body {
 }
 
 .logo svg {
-  height: var(--text-base);  /* increase this until it matches the nav text height */
-  width: auto;
+    height: var(--text-base);  /* increase this until it matches the nav text height */
+    width: auto;
 }
+
+.badge-completed {
+  background-color: #cbfbf1;
+  color: #15803d;
+}
+
+.badge-not-completed {
+  background-color: #ffe2e2;
+  color: #b91c1c;
+}
+
+.dark .badge-completed {
+  background-color: color-mix(in srgb, #00bba7 20%, transparent);
+  color: #00d5be;
+}
+
+.dark .badge-not-completed {
+  background-color: color-mix(in srgb, #fb2c36 20%, transparent);
+  color: #ff6467;
+}
+
 
 @media (max-width: 760px) {
     header.flex {
