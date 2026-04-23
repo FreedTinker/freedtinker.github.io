@@ -38,23 +38,23 @@ body {
 }
 
 .badge-completed {
-  background-color: #cbfbf1;
-  color: #15803d;
+    background-color: color-mix(in srgb, #cbfbf1 20%, transparent);
+    color: #15803d;
 }
 
 .badge-not-completed {
-  background-color: #ffe2e2;
-  color: #b91c1c;
+    background-color: color-mix(in srgb, #ffe2e2 20%, transparent);
+    color: #b91c1c;
 }
 
 .dark .badge-completed {
-  background-color: color-mix(in srgb, #00bba7 20%, transparent);
-  color: #00d5be;
+    background-color: color-mix(in srgb, #00bba7 20%, transparent);
+    color: #00d5be;
 }
 
 .dark .badge-not-completed {
-  background-color: color-mix(in srgb, #fb2c36 20%, transparent);
-  color: #ff6467;
+    background-color: color-mix(in srgb, #fb2c36 20%, transparent);
+    color: #ff6467;
 }
 
 

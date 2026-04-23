@@ -38,3 +38,8 @@ Toutes les modifications notables de ce projet seront documentées dans ce fichi
 ## [ 2026-04-18 ]
 - Ajout du statut de complétion
 - Désactivation du rendu des brouillons
+
+## [ 2026-04-23 ]
+- Ajout d'une palette de couleur personnalisée
+- Transparence des statuts de complétions en mode clair
+- Activation de "Code copy"
